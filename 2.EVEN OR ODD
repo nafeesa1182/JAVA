@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class evenodd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int a=inp.nextInt();
+		inp.close();
+		if(isEven(a)){
+			System.out.println("Even number");
+		}
+		else {
+			System.out.println("Odd number");
+		}
+	}
+		static boolean isEven(int a) {
+			return(a&1)==0;
+		}
+
+	}
