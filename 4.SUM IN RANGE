@@ -1,0 +1,28 @@
+import java.util.Scanner; 
+public class suminrange {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		System.out.println("Enter A:");
+		int A=inp.nextInt();
+		System.out.println("ENter B:");
+		int B=inp.nextInt();
+		int sum=getsum(0,A,B);
+		System.out.println(sum);
+	}
+	static int getsum(int sum,int A,int B) {
+		if(A>B) {
+			return A;
+		}
+		else {
+			return B;
+		}
+		/*for(int i=A;i<=B;i++) {
+			sum+=i;
+		}
+		return sum;
+*/
+	}
+
+}
