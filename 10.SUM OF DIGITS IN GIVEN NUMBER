@@ -1,0 +1,23 @@
+package prepinsta;
+
+import java.util.Scanner;
+
+public class sum_of_digits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int n=inp.nextInt();
+		int sum=0;
+		int rem;
+		while(n!=0) {
+		rem=n%10;
+		sum+=rem;
+		n/=10;
+		}
+		System.out.println(sum);
+
+	}
+
+}
