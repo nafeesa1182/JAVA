@@ -1,0 +1,26 @@
+package prepinsta;
+import java.util.Scanner;
+
+public class greatest_3_numbers {
+
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Enter three numbers:");
+        int a = inp.nextInt();
+        int b = inp.nextInt();
+        int c = inp.nextInt();
+        inp.close();
+        int result = greatest(a, b, c);
+        System.out.println(result + " is greatest");
+    }
+
+ public static int greatest(int n1, int n2, int n3) {
+	 if ((n1 >= n2) && (n1 >= n3)) {
+		 return n1;
+        } else if ((n2 >= n1) && (n2 >= n3)) {
+         return n2;
+        } else {
+          return n3;
+        }
+    }
+}
