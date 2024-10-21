@@ -1,0 +1,21 @@
+package prepinsta;
+import java.util.Scanner;
+public class automorphic_number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int n=inp.nextInt();
+		int square=n*n;
+		if(square%10==n%10)
+		{
+			System.out.println("Automorphic Number");
+		}
+		else
+		{
+			System.out.println("Not a Automorphic Number");
+		}
+
+	}
+
+}
