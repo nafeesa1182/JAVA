@@ -1,0 +1,28 @@
+package prepinsta;
+
+import java.util.Scanner;
+
+public class haarshad_number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int n=inp.nextInt();
+		int sum=0;
+		int temp=n;
+		while(n!=0)
+		{
+			int digit=n%10;
+			sum+=digit;
+			n/=10;
+		}
+		if(temp%sum==0)
+		{
+			System.out.println("Harshad Number");
+		}
+		else
+		{
+			System.out.println("Not a Harshad Number");
+		}
+	}
+}
