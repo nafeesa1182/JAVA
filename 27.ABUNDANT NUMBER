@@ -1,0 +1,31 @@
+package prepinsta;
+
+import java.util.Scanner;
+
+public class abundant_number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int n=inp.nextInt();
+		int sum=0;
+		int temp=n;
+		for(int i=1;i<n;i++)
+		{
+			if(n%i==0)
+			{
+				sum+=i;
+			}
+		}
+		if(sum>temp)
+		{
+			System.out.println("Abundant Number");
+			System.out.println("Abundance is:"+(sum-temp));
+		}
+		else
+		{
+			System.out.println("not a abundant Number");
+		}
+	}
+
+}
