@@ -1,0 +1,29 @@
+package prepinsta;
+import java.util.Scanner;
+
+public class friendly_pair {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Enter two numbers: ");
+        int n1 = inp.nextInt();
+        int n2 = inp.nextInt();
+        inp.close();
+
+        int sum1 = getDivisorSum(n1);
+        int sum2 = getDivisorSum(n2);
+        if ((float)sum1 / n1 == (float)sum2 / n2) {
+            System.out.println("Friendly pair");
+        } else {
+            System.out.println("Not a Friendly Pair");
+        }
+    }
+    public static int getDivisorSum(int x) {
+        int sum = 0;
+        for (int i = 1; i < x; i++) {
+            if (x % i == 0) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+}
