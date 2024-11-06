@@ -1,0 +1,25 @@
+package workingwith_Numbers;
+import java.util.*;
+public class OCTAL_TO_DECIMAL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		/*int oct=inp.nextInt();
+		int dec=0;
+		int n=0;
+		while(oct>0)
+		{
+			int temp=oct%10;
+			dec+=temp*Math.pow(8,n);
+			oct=oct/10;
+			n++;
+		}
+		System.out.println(dec);*/
+		String str=inp.nextLine();
+		int dec=Integer.parseInt(str,8);
+		System.out.println(dec);
+
+	}
+
+}
