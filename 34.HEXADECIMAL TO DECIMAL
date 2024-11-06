@@ -1,0 +1,17 @@
+package workingwith_Numbers;
+import java.util.*;
+public class HEXADECIMAL_TO_DECIMAL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		
+		String str=inp.nextLine();
+		int dec=Integer.parseInt(str,16);
+		System.out.println(dec);
+
+
+	}
+
+}
+ 
