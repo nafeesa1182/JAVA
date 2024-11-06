@@ -1,0 +1,13 @@
+package workingwith_Numbers;
+import java.util.*;
+public class DECIMAL_TO_HEXADECIMAL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int n=inp.nextInt();
+		String hex=Integer.toHexString(n);
+		System.out.println(hex);
+	}
+
+}
