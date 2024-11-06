@@ -1,0 +1,25 @@
+package workingwith_Numbers;
+
+import java.util.Scanner;
+
+public class DECIMAL_TO_OCTAL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int dec=inp.nextInt();
+		int binary[]=new int[20];
+		int i=0;
+		while(dec>0)
+		{
+			int r=dec%8;
+			binary[i++]=r;
+			dec=dec/8;
+		}
+		for(int j=i-1;j>=0;j--)
+		{
+		System.out.print(binary[j]);
+		}
+	}
+
+}
