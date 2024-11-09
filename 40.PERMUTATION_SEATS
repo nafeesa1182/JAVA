@@ -1,0 +1,18 @@
+package workingwith_Numbers;
+import java.util.*;
+public class PERMUTATION_SEATS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int n=inp.nextInt();
+		int r=inp.nextInt();
+		int fact=1;
+		for(int i=n;i>=n-r+1;i--)
+		{
+			fact*=i;
+		}
+		System.out.println(fact);
+	}
+
+}
