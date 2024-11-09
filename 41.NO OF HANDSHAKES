@@ -1,0 +1,13 @@
+package workingwith_Numbers;
+import java.util.Scanner;
+public class NO_OF_HANDSHAKES {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int n=inp.nextInt();
+		int total=(n*(n-1))/2;
+		System.out.println(total);
+	}
+
+}
