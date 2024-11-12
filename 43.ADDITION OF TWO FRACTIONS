@@ -1,0 +1,25 @@
+import java.util.*;
+public class ADDITION_OF_TWO_FRACTIONS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int x1=inp.nextInt();
+		int y1=inp.nextInt();
+		int x2=inp.nextInt();
+		int y2=inp.nextInt();
+		int x3=(x1*y2)+(x2*y1);
+		int y3=y1*y2;
+		int gcd=gcd(x3,y3);
+		x3/=gcd;
+		y3/=gcd;
+		System.out.println(x3+"/"+y3);
+	}
+	public static int gcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        }
+        return gcd(b, a % b);
+    }
+
+}
