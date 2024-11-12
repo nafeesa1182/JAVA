@@ -1,0 +1,12 @@
+import java.util.*;
+public class AREA_OF_CIRCLE {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int r=inp.nextInt();
+		double area=3.14*r*r;
+		System.out.println(area);
+	}
+
+}
