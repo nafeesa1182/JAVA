@@ -1,0 +1,28 @@
+package workingwith_Numbers;
+import java.util.*;
+public class OCCURENCE_OF_A_DIGIT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp=new Scanner(System.in);
+		int n=inp.nextInt();
+		String str=Integer.toString(n);
+  int[] digitCount = new int[10];  // Array to store count of each digit (0-9)
+	        
+	        // Count occurrences of each digit
+	        for (int i = 0; i < str.length(); i++) {
+	            int digit = str.charAt(i) - '0'; // Convert char to int
+	            digitCount[digit]++;
+	        }
+	        
+	        // Display the result
+	        for (int i = 0; i < digitCount.length; i++) {
+	            if (digitCount[i] > 0) {
+	                System.out.println(i + " - " + digitCount[i]);
+	            }
+	        }
+	        
+	        inp.close();
+	}
+
+}
